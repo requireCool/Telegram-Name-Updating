@@ -38,10 +38,10 @@ logger = logging.getLogger(__name__)
 
 async def change_name_auto():
     # Set time zone to UTC+8
-    # ln -sf /usr/share/zoneinfo/Asia/Chongqing /etc/localtime
+    ln -sf /usr/share/zoneinfo/Asia/Chongqing /etc/localtime
     # https://stackoverflow.com/questions/4788533/python-strftime-gmtime-not-respecting-timezone
 
-    print('will change name')
+    print('begin to change name')
 
     while True:
         try:
@@ -55,6 +55,7 @@ async def change_name_auto():
                 # hour symbols
                 hsym = time_emoji_symb[(int(hour)%12)*2+shift]
                 # await client1.send_message('me', hsym)
+                '''
                 for_fun = random.random() 
                 if for_fun < 0.10:
                     last_name = '%s时%s分 %s' % (hour, minu, hsym)
@@ -66,6 +67,8 @@ async def change_name_auto():
                     last_name = '%s' % dizzy
                 else:
                     last_name = '%s' % cake
+                '''
+                last_name = '%s:%s %s %s %s' % (hour, minu, p, abbwn, hsym)
         
                 await client1(UpdateProfileRequest(last_name=last_name))
                 logger.info('Updated -> %s' % last_name)
