@@ -38,7 +38,7 @@ logger = logging.getLogger(__name__)
 
 async def change_name_auto():
     # Set time zone to UTC+8
-    ln -sf /usr/share/zoneinfo/Asia/Chongqing /etc/localtime
+    # ln -sf /usr/share/zoneinfo/Asia/Chongqing /etc/localtime
     # https://stackoverflow.com/questions/4788533/python-strftime-gmtime-not-respecting-timezone
 
     print('begin to change name')
