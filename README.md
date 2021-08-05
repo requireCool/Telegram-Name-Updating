@@ -8,11 +8,11 @@ lastname实时更新效果：<a href="https://t.me/CodyDoby">Cody</a>
 
 ## 0. 准备
 
-运行环境：VPS，python3，python3-pip
+运行环境：主机，python3，python3-pip
 
 创建应用：<a href="https://my.telegram.org/">https://my.telegram.org/</a>。只要填App title和Short name即可。获得api_id和api_hash。
 
-## 1. 下载Demo小程序到VPS上
+## 1. 下载Demo小程序到主机上
 
 <code>git clone https://github.com/xyou365/Telegram-Name-Updating.git</code>\
 <code>cd Telegram-Name-Updating</code>
