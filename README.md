@@ -12,7 +12,7 @@
 
 **<1> 准备**
 
-运行环境：VPS，python3，python3-pip
+运行环境：主机，python3，python3-pip
 
 创建应用：<a href="https://my.telegram.org/">https://my.telegram.org/</a>。只要填App title和Short name即可。获得api_id和api_hash。
 
